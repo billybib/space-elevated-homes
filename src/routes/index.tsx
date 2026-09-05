@@ -109,7 +109,7 @@ function Index() {
         <div className="section-shell relative z-10 pb-16 pt-40 md:pb-24">
           <div className="reveal max-w-3xl">
             <p className="eyebrow text-primary-foreground/75">London Loft Conversion Specialists</p>
-            <h1 className="mt-6 font-serif-display text-[2.6rem] leading-[1.06] text-primary-foreground sm:text-6xl md:text-7xl">More Space.<br />Beautifully Built</h1>
+            <h1 className="mt-6 font-serif-display text-[2.6rem] leading-[1.06] text-primary-foreground sm:text-6xl md:text-7xl">More Space.<br />Beautifully fit</h1>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Button asChild variant="quote" size="quote"><a href="#quote">Get My Free Quote</a></Button>
               <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="text-sm font-medium text-primary-foreground/85 underline decoration-primary-foreground/30 underline-offset-8 transition-colors hover:text-primary-foreground">{PHONE}</a>
