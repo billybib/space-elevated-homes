@@ -19,8 +19,11 @@
  */
 
 @theme inline {
-  --font-sans: "Manrope", sans-serif;
-  --font-display: "Sora", sans-serif;
+  --font-sans: "Inter", "Manrope", sans-serif;
+  --font-display: "DM Serif Display", Georgia, serif;
+  --color-stone: var(--stone);
+  --color-sage: var(--sage);
+  --color-brass: var(--brass);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
