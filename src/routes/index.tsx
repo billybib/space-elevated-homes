@@ -104,14 +104,14 @@ function Index() {
     <main id="top">
       <section className="relative flex min-h-[86vh] items-end overflow-hidden">
         <img src={heroImage} width={1920} height={1104} fetchPriority="high" alt="Bright completed London loft conversion with rooflights and fitted joinery" className="absolute inset-0 size-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.252_0.006_157/0.82)] via-[oklch(0.252_0.006_157/0.22)] to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.252_0.006_157/0.88)] via-[oklch(0.252_0.006_157/0.3)] to-transparent" />
         <div className="section-shell relative z-10 pb-16 pt-40 md:pb-24">
           <div className="reveal max-w-3xl">
             <p className="eyebrow text-brass">London Loft Conversion Specialists</p>
             <h1 className="mt-6 font-serif-display text-[2.6rem] leading-[1.06] text-primary-foreground sm:text-6xl md:text-7xl">Loft Conversions Built Around Your Home</h1>
             <p className="mt-7 max-w-xl text-base leading-8 text-primary-foreground/85 md:text-lg">More space, carefully planned and fully managed by one experienced team — from your first survey to final handover.</p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Button asChild variant="quote" size="quote" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"><a href="#quote">Get My Free Quote</a></Button>
+              <Button asChild variant="quote" size="quote"><a href="#quote">Get My Free Quote</a></Button>
               <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="text-sm font-medium text-primary-foreground/85 underline decoration-primary-foreground/30 underline-offset-8 transition-colors hover:text-primary-foreground">{PHONE}</a>
             </div>
           </div>
