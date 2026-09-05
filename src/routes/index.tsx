@@ -94,7 +94,7 @@ function Index() {
         </nav>
         <div className="flex items-center gap-5">
           <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-sage">
-            <Phone className="size-4 text-sage" strokeWidth={1.6} /><span className="hidden sm:inline">{PHONE}</span>
+            <Phone className="size-4 text-sage" strokeWidth={1.6} /><span className="text-[0.8rem] sm:text-sm">{PHONE}</span>
           </a>
           <Button asChild variant="quote" size="quote" className="hidden h-11 px-6 md:inline-flex"><a href="#quote">Get a Free Quote</a></Button>
         </div>
@@ -104,7 +104,8 @@ function Index() {
     <main id="top">
       <section className="relative flex min-h-[86vh] items-end overflow-hidden">
         <img src={heroImage} width={1920} height={1104} fetchPriority="high" alt="Bright completed London loft conversion with rooflights and fitted joinery" className="absolute inset-0 size-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.252_0.006_157/0.88)] via-[oklch(0.252_0.006_157/0.3)] to-transparent" />
+        <div className="absolute inset-0 bg-[oklch(0.252_0.006_157/0.22)]" />
+        <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-[oklch(0.252_0.006_157/0.92)] via-[oklch(0.252_0.006_157/0.6)] to-transparent" />
         <div className="section-shell relative z-10 pb-16 pt-40 md:pb-24">
           <div className="reveal max-w-3xl">
             <p className="eyebrow text-brass">London Loft Conversion Specialists</p>
