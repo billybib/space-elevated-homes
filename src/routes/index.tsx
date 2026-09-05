@@ -48,9 +48,7 @@ const trustPoints = [
 ] as const;
 
 const reviews = [
-  { quote: "From the first visit, everything was explained clearly. The team kept our home tidy and the new bedroom feels like it has always belonged here.", name: "Sarah", job: "Dormer Loft Conversion — Walthamstow" },
-  { quote: "Having one person to call made a huge difference. Every trade arrived when promised and the finish is excellent.", name: "James", job: "Hip-to-Gable Conversion — Ealing" },
-  { quote: "They guided us through planning and the party-wall process, then delivered a beautiful space for our growing family.", name: "Priya", job: "Mansard Loft Conversion — Hackney" },
+  { quote: "Both jobs were done well. He is prompt and fair. HIGHLY recommended!", name: "Eva & Patrick", job: "Plumbing and window repairs" },
 ] as const;
 
 const projects = [
@@ -103,7 +101,7 @@ function Index() {
           <a href="#services" className="transition-colors hover:text-accent">Conversion types</a>
           <a href="#faq" className="transition-colors hover:text-accent">FAQs</a>
         </nav>
-        <a href="#quote" className="flex items-center gap-2 text-sm font-bold text-primary-foreground"><Phone className="size-4 text-accent"/>Get a quote</a>
+        <a href="#quote" className="flex items-center gap-2 text-sm font-bold text-primary-foreground"><Phone className="size-4 text-accent"/>Start My Quote</a>
       </div>
     </header>
 
@@ -134,8 +132,11 @@ function Index() {
           <div className="mb-5 flex gap-1 text-accent" aria-label="Five stars">{Array.from({length:5}).map((_, i) => <Star key={i} className="size-4 fill-current"/>)}</div>
           <blockquote className="text-sm leading-7 text-card-foreground/80">“{review.quote}”</blockquote>
           <figcaption className="mt-6 border-t border-border pt-4"><strong className="text-sm">{review.name}</strong><span className="mt-1 block text-xs leading-5 text-muted-foreground">{review.job}</span></figcaption>
-        </figure>)}</div>
-        <Button asChild variant="quoteOutline" size="quote" className="mt-8"><a href="#reviews">Read More Reviews <ArrowRight /></a></Button>
+        </figure>)}
+          <div className="border border-border bg-card p-6"><p className="font-display text-3xl font-semibold text-primary">9.96<span className="text-lg text-accent">/10</span></p><p className="mt-3 text-sm font-bold">71 Checkatrade reviews</p><p className="mt-2 text-xs leading-5 text-muted-foreground">Independent customer feedback for Supreme Lofts Ltd.</p></div>
+          <div className="border border-border bg-card p-6"><p className="font-display text-3xl font-semibold text-primary">Vetted <span className="text-accent">& approved</span></p><p className="mt-3 text-sm font-bold">TrustATrader member</p><p className="mt-2 text-xs leading-5 text-muted-foreground">Serving Waltham Forest and surrounding London areas.</p></div>
+        </div>
+        <Button asChild variant="quoteOutline" size="quote" className="mt-8"><a href="https://supremelofts.co.uk/reviews/" target="_blank" rel="noreferrer">Read More Reviews <ArrowRight /></a></Button>
       </section>
 
       <section id="projects" className="bg-primary py-16 text-primary-foreground md:py-24">
@@ -172,7 +173,7 @@ function Index() {
         </form>
       </div></section>
     </main>
-    <footer id="reviews" className="bg-primary py-8 text-primary-foreground"><div className="section-shell flex flex-col gap-3 border-t border-primary-foreground/15 pt-7 text-xs text-primary-foreground/55 sm:flex-row sm:items-center sm:justify-between"><span className="font-display font-bold text-primary-foreground">SUPREME <span className="text-accent">LOFTS</span></span><span>London loft conversions, designed and built around your home.</span></div></footer>
+    <footer className="bg-primary py-8 text-primary-foreground"><div className="section-shell flex flex-col gap-3 border-t border-primary-foreground/15 pt-7 text-xs text-primary-foreground/55 sm:flex-row sm:items-center sm:justify-between"><span className="font-display font-bold text-primary-foreground">SUPREME <span className="text-accent">LOFTS</span></span><span>London loft conversions, designed and built around your home.</span></div></footer>
     <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 p-3 backdrop-blur md:hidden"><Button asChild variant="quote" size="quote" className="w-full"><a href="#quote">Get My Free Quote <ArrowRight/></a></Button></div>
   </div>;
 }
