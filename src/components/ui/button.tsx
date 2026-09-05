@@ -11,9 +11,9 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         quote:
-          "rounded-sm bg-accent text-accent-foreground shadow-none hover:bg-accent/90 focus-visible:ring-accent",
+          "rounded-none bg-primary text-primary-foreground shadow-none transition-all duration-300 hover:bg-primary/85 focus-visible:ring-primary",
         quoteOutline:
-          "rounded-sm border border-accent bg-transparent text-accent hover:bg-accent hover:text-accent-foreground",
+          "rounded-none border border-current bg-transparent text-current shadow-none transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
